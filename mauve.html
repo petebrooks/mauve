@@ -1,29 +1,11 @@
-<head>
-  <title>mauve</title>
-</head>
+<template name="mainLayout">
 
-<body>
-  <div class="color_r"></div>
+  {{>Template.dynamic template=top }}
 
   <main>
     <h1>mauve</h1>
-    <form class="new-movie">
-      <input type="text" name="title" placeholder="Title"/>
-      <input type="text" name="hexColor" hidden/>
-      <input type="submit"/>
-    </form>
 
-    <div class="container">
-      {{#each movies}}
-        {{> mov}}
-      {{/each}}
-    </div>
+    {{>Template.dynamic template=main }}
   </main>
-</body>
 
-<template name="mov">
-  <div class="row">
-    <div class="nine columns">{{ title }}</div>
-    <div class="three columns">{{ formatDate }}</div>
-  </div>
 </template>

@@ -10,3 +10,5 @@ insecure
 momentjs:moment
 fourseven:scss
 aramk:tinycolor
+kadira:flow-router
+kadira:blaze-layout
