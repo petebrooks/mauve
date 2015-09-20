@@ -1,0 +1,14 @@
+<template name="home">
+
+  <button class="button_1" show="#search">0</button>
+  <button class="button_2" href="new">+</button>
+
+  <input class="hide" id="search"/>
+
+  <div>
+    {{#each movies}}
+      {{> movieRow}}
+    {{/each}}
+  </div>
+
+</template>
